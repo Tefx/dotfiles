@@ -48,8 +48,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-setopt RM_STAR_WAIT
-setopt CORRECT
+# setopt RM_STAR_WAIT
+# setopt CORRECT
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -87,8 +87,6 @@ plugins=(git archlinux docker taskwarrior tmux vim virtualenvwrapper)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#source /usr/bin/virtualenvwrapper.sh
-
 fuck () {
 	TF_PREVIOUS=$(fc -ln -1 | tail -n 1);
         TF_CMD=$(
@@ -113,13 +111,13 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+export EDITOR='vim'
 export SHELL=/usr/bin/zsh
 
 alias vim='vim --servername vim'
 alias fsrv='python -m http.server'
 
 eval "`pip completion --zsh`"
-
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -134,10 +132,6 @@ POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
 
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='196'
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='232'
-
-#POWERLEVEL9K_HOME_ICON='\UF015'
-#POWERLEVEL9K_SUB_ICON='\UF07C'
-#POWERLEVEL9K_FOLDER_ICON='\UF07B'
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time battery time)
