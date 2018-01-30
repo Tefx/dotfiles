@@ -1,0 +1,9 @@
+10052  ln -s .dotfiles/vimrc .vimrc
+10056  ln -s .dotfiles/zshrc .zshrc
+10059  ln -s .dotfiles/yaourtrc .yaourtrc
+10061  ln -s .dotfiles/tmux.conf .tmux.conf
+10063  ln -s .dotfiles/config/ranger/rc.conf .config/ranger/rc.conf
+10067  ln -s .dotfiles/config/compton.conf .config/
+10069  ln -s .dotfiles/config/i3 .config/i3
+10074  ln -s .dotfiles/gitconfig .gitconfig
+10090  ln -s .dotfiles/pam_environment .pam_environment
