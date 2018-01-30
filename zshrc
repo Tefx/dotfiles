@@ -116,6 +116,7 @@ source /usr/share/fzf/key-bindings.zsh
 export SHELL=/usr/bin/zsh
 
 alias vim='vim --servername vim'
+alias fsrv='python -m http.server'
 
 eval "`pip completion --zsh`"
 
