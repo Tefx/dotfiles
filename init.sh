@@ -8,7 +8,6 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-mkdir ~/.config/i3
 mkdir ~/.config/ranger
 mkdir ~/.config/polybar
 
