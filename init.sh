@@ -2,9 +2,13 @@
 
 ln -sf ~/.dotfiles/yaourtrc ~/.yaourtrc
 
-#yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox vim
+#yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox vim curl python-pip clang llvm ctags
+
+sudo pip install virtualenvwrapper
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

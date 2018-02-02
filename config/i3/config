@@ -176,7 +176,8 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id setxkbmap -option "ctrl:swapcaps"
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id polybar i3
+#exec --no-startup-id polybar i3
+exec --no-startup-id ~/.dotfiles/launch_polybar.sh
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
 exec --no-startup-id compton -b
