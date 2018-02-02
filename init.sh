@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
+ln -sf ~/.dotfiles/yaourtrc ~/.yaourtrc
+
+#yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox
+
+mkdir ~/.config/i3
+mkdir ~/.config/ranger
+mkdir ~/.config/polybar
+
 ln -sf ~/.dotfiles/vimrc ~/.vimrc
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
-ln -sf ~/.dotfiles/yaourtrc ~/.yaourtrc
 ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/config/i3 ~/.config/i3
 ln -sf ~/.dotfiles/config/termite ~/.config/termite

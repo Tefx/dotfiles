@@ -44,7 +44,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 # Screenshot (now provided by Plasma)
 bindsym Print exec --no-startup-id spectacle
 
-bindsym $mod+c exec firefox-beta
+bindsym $mod+c exec firefox
 
 # change focus
 bindsym $mod+j focus left
@@ -173,6 +173,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Starting things with i3
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id setxkbmap -option "ctrl:swapcaps"
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id polybar i3
