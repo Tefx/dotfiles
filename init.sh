@@ -2,7 +2,11 @@
 
 ln -sf ~/.dotfiles/yaourtrc ~/.yaourtrc
 
-#yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox
+#yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox vim
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 mkdir ~/.config/i3
 mkdir ~/.config/ranger
