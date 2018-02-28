@@ -118,6 +118,8 @@ alias vim='env TERM=xterm-256color vim --servername vim'
 alias fsrv='python -m http.server'
 alias sspd='i3lock -i ~/.config/i3/wallpaper2.png && systemctl suspend'
 alias lock='i3lock -i ~/.config/i3/wallpaper2.png'
+alias ssh="TERM=xterm ssh"
+alias open="xdg-open"
 
 #eval "`pip completion --zsh`"
 

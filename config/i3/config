@@ -45,6 +45,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym Print exec --no-startup-id spectacle
 
 bindsym $mod+c exec firefox
+bindsym $mod+t exec termite -e vim
 
 # change focus
 bindsym $mod+j focus left
@@ -176,11 +177,11 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id setxkbmap -option "ctrl:swapcaps"
 exec --no-startup-id nitrogen --restore
-#exec --no-startup-id polybar i3
 exec --no-startup-id ~/.dotfiles/launch_polybar.sh
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
 exec --no-startup-id compton -b
+exec xinit set-prop 11 295 1
 
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
