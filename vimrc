@@ -22,6 +22,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'rstacruz/vim-remux'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'woelke/vim-nerdtree_plugin_open'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'simnalamburt/vim-mundo'
 Plug 'terryma/vim-multiple-cursors'
@@ -148,7 +149,7 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_python_flake8_options='--ignore=E712,E711'
 let g:ale_python_pylint_options = '-d missing-docstring'
 
-let g:vimtex_view_method='mupdf'
+let g:vimtex_view_method='zathura'
 
 
 set undofile
@@ -164,3 +165,5 @@ endif
 nnoremap <C-f> :CtrlSF<Space>
 "let g:ctrlsf_default_view_mode = 'compact'
 let g:ctrlsf_default_view_mode = 'normal'
+
+let g:nerdtree_plugin_open_cmd = 'xdg-open'
