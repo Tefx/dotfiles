@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export TERM="xterm-256color"
+
 # Path to your oh-my-zsh installation.
 ZSH=~/.oh-my-zsh/
 
@@ -123,8 +125,6 @@ alias ssh="TERM=xterm ssh"
 alias open="xdg-open"
 
 #eval "`pip completion --zsh`"
-
-export TERM="xterm-256color"
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
