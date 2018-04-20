@@ -7,9 +7,11 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'easymotion/vim-easymotion'
+"Plug 'ervandew/supertab'
 Plug 'ehamberg/vim-cute-python'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'godlygeek/tabular'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jmcantrell/vim-virtualenv'
@@ -37,7 +39,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'w0rp/ale'
 Plug 'Chiel92/vim-autoformat'
 Plug 'KabbAmine/zeavim.vim'
-Plug 'SirVer/ultisnips'
 Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer --system-libclang'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -91,6 +92,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 nmap <F3> :TagbarToggle<CR>
 
+nmap <F5> <plug>(vimtex-compile)
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_python_binary_path = 'python'
@@ -150,6 +152,13 @@ let g:ale_python_flake8_options='--ignore=E712,E711'
 let g:ale_python_pylint_options = '-d missing-docstring'
 
 let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_open_on_warning=0
+
+augroup VimCompletesMeTex
+    autocmd!
+    autocmd FileType tex
+        \ let b:vcm_omni_pattern = g:vimtex#re#neocomplete
+augroup END
 
 
 set undofile

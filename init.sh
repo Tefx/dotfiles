@@ -2,7 +2,7 @@
 
 ln -sf ~/.dotfiles/yaourtrc ~/.yaourtrc
 
-yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox gvim curl python-pip clang llvm ctags
+yaourt -S zsh tmux fzf ranger polybar nitrogen arandr termite siji-git rofi network-manager-applet arc-gtk-theme arc-icon-theme pcmanfm polkit-gnome firefox gvim curl python-pip clang llvm ctags cmake wget git
 
 sudo pip install virtualenvwrapper
 
