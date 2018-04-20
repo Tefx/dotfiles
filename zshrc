@@ -87,6 +87,7 @@ plugins=(git archlinux docker taskwarrior tmux vim virtualenvwrapper)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
 fuck () {
 	TF_PREVIOUS=$(fc -ln -1 | tail -n 1);
         TF_CMD=$(
@@ -122,6 +123,8 @@ alias ssh="TERM=xterm ssh"
 alias open="xdg-open"
 
 #eval "`pip completion --zsh`"
+
+export TERM="xterm-256color"
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv context dir)
